@@ -47,13 +47,13 @@ axios.interceptors.response.use(
   },
   err => {
     // console.log(err)
-    MessageBox.alert(
-      window.i18n._vm._data.messages[window.i18n._vm._data.locale]['msg'].NetworkError,
-      window.i18n._vm._data.messages[window.i18n._vm._data.locale]['msg'].Tips, {
-        type: 'error',
-        closeOnClickModal: true,
-        closeOnPressEscape: true
-      }).then(() => {})
+    // MessageBox.alert(
+    //   window.i18n._vm._data.messages[window.i18n._vm._data.locale]['msg'].NetworkError,
+    //   window.i18n._vm._data.messages[window.i18n._vm._data.locale]['msg'].Tips, {
+    //     type: 'error',
+    //     closeOnClickModal: true,
+    //     closeOnPressEscape: true
+    //   }).then(() => {})
     return Promise.reject(err)
   }
 )
